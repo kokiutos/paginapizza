@@ -1,0 +1,102 @@
+/*Para agregar ses una imagen o un color de fondo se le da a body*/
+body
+{
+ /*background-color: rgb(196, 115, 243);*/
+   background-image: url("Imagenes/arbol2.png");
+   background-repeat:no-repeat;
+   background-position: right top;/*Controlar a donde quiero posicionar la imagen*/
+   
+    
+}
+/*p Todos los parrafos van a tener los siguientes estilos 
+{
+    background-color: blueviolet;
+}*/
+/*Vamos a traer solamente al parrafo al que le dimos un ID*/
+#parrafo2
+{
+  background-color: chocolate;
+  font-size: 20px;
+  /* la fuente del texto se hace con la propiedad font-family*/
+  font-family: Arial, Helvetica, sans-serif; /*en font-family debe de contener varios nombres de fuentes como un sistema alternativo, para garantizar la maxima compatibilidad entre navegadores. Se debe de comenzar con la fuente que se desea y terminar con la familia de fuentes generica para permitir que el navegador elija una fuente similar en la familia generica si no hay otras fuentes disponibles, los nombres de las fuentes deben estar separados por comas */
+  /*tipos de trazos:*/
+  /*1.sans-serif: tiene lineas limpias, sin trazos */
+  /*2. las serif tienen un pequeño trazo en los bordes de cada letra*/
+  /*3.monoespaciadas todas las letras tienen el mismo ancho, crean una apariencia mecanica */
+  /*4.cursivas */ 
+  /*5.las fuentes fantasía que son fuentes decorativas*/
+  text-transform: uppercase;/*text-transform es un propiedad que se utiliza para especificar las letras mayusculas y miniculas en un texto, convertir todo en letras mayusculas,convertir todo en letras minusculas o poner en mayuscula la primera letra de cada palabra */
+  /*uppercase:TODAS LAS LETRAS EN MAYUSCULA */
+  /*lowercase: todas las letras en minuscula */
+  /*Capitaliza: La Primera Letra En Mayuscula*/
+}
+.text1
+{
+   
+    /*Para el tamaño de la letra font-size */
+    /*font hace referencia a atributos para texto */
+    font-size: 34px;
+    text-align: justify;
+    text-shadow: 2px 2px 2px rgb(9, 255, 0);
+}
+.text1:hover
+{
+  background-color: lightpink;
+  color: lightslategray;
+}
+.text_color
+{
+  color: rgb(159, 238, 159); /*color es color para la letra*/ 
+}
+/* Las clases me permiten reutilizar codigo, por que puedo llamar varias clases en un mismo elemento de HTML, a diferencia del ID que solamente puedo darle un nombre*/
+/*Estilo de esquema de contornos */
+/* outline-style y esta pripieda especifica el estilo del contorno y puede tener los siguientes valores: dotted-Define un contorno punteado(punticos),dashed- Define un contorno punteado(rayas),solid-Define un contorno solido, double-Define un contorno doble*/
+#borde1
+{
+  outline-style: dotted;
+  outline-color: darkolivegreen;
+  outline-width:medium;
+  font-family: 'Times New Roman', Times, serif;
+
+}
+#borde2
+{
+  outline-style: dashed;
+  outline-color: deeppink;
+  outline-width:medium;
+  /*Alinear textos usamos la propiedad text-aling */
+  text-align: center;/*el valor center indica que la alineacion del texto sea en el centro */
+  font-family:Arial, Helvetica, sans-serif ;
+}
+#borde3
+{
+  outline-style: solid;
+  outline-color: rgb(0, 0, 0);
+  outline-width:medium;
+  text-align: right;/*el valor right indica que la alineacion del texto sea en la derecha */
+  font-family: "Lucida Console","Courier New",monospace;
+}
+#borde4
+{
+  outline-style: double;
+  outline-color: maroon;
+  outline-width:medium;
+  text-align: justify;
+  font-family: "Brush Script MT", cursive;
+}
+a
+{
+  text-decoration: none; /*Esta propiedad le quita la raya que trae los enlaces por defecto */
+  color: lightcoral;/*Le da un color a letra*/
+  font-size: 30px;/*Le da un tamaño*/
+  font-family: 'Shadows Into Light', cursive;
+
+}
+/*Darle propiedades a los elementos cuando pasamos el cursor por encima, se hace con :hover*/
+a:hover
+{
+color: lightgreen;
+text-decoration: underline;
+}
+/*el grupo de font son caracteristicas hacia fuente del texto */
+/* el text se va a encargar de dar decoracion para el texto*/

@@ -1,0 +1,32 @@
+body
+{
+    /*background-color: plum; color de fondo */
+   
+    background-color: rgb(101, 134, 223);
+}
+
+#h
+{
+    color: rgb(32, 43, 194);
+      
+}
+
+.text1
+{
+    font-family: sans-serif;
+    color: rgb(45, 55, 199);
+}
+.text2
+{
+    font-family: sans-serif;
+    color: rgb(45, 55, 199);
+    text-align: right;
+}
+
+#d
+{
+    color: rgb(253, 253, 253);
+    background-color: rgb(73, 73, 73);
+    text-align: center;
+      
+}

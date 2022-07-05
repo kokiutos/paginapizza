@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul
+        {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: rgb(79, 79, 83);
+
+        }
+        li
+        {
+            float: left;
+        }
+        li a, .lista
+        {
+            display: inline-block;
+            color: cornsilk;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        li a:hover
+        {
+            background-color: crimson;
+        }
+        li.dropdown-lista
+        {
+            display: inline-block;
+        }
+        .listadesplegable
+        {
+            display: none;
+            position: absolute;
+            background-color: rgb(252, 252, 250);
+            min-width: 160px;
+        }
+        .listadesplegable a
+        {
+            color: rgb(26, 26, 27);
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+        .listadesplegable a:hover
+        {
+            background-color: rgb(216, 68, 48);
+        }
+        .dropdown-lista:hover .listadesplegable
+        {
+            display: block;
+        }
+        #imgcabecera
+        {
+            display: block;
+            width: 700px;
+            margin: auto;
+        }
+        .contenido
+        {
+            width: 100%;
+            max-width: 1200px;
+            height: 430px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: auto;
+        }
+         .contenido .card
+        {
+            width: 330px;
+            height: 430px;
+            border-radius: 8px;
+            box-shadow: 0 2px rgb(0, 0, 0);
+            overflow: hidden;
+            margin: 20px;
+            text-align: center;
+            transition: all 0.25s;
+        }
+        .contenido .card:hover
+        {
+            transform: translateY(-15px);
+            box-shadow: 0 12px 16px rgb(0, 0, 0);
+        }
+        .contenido .card img
+        {
+            width: 330px;
+            height: 220px;
+        }
+    </style>
+</head>
+<body>
+         <header>
+             <img src="imagenes/adidas.png" alt="" id=imgcabecera>
+             <h1 style="position: absolute; top: 48%; left: 40%;">Tienda de ropa deportiva</h1>
+             
+         </header>
+         <br>
+         <br>
+         <br>
+         <br>
+
+         <nav>
+            <ul>
+                <li><a href="">Inicio </a></li>
+                <li><a href="">Tendencias </a></li>
+                <li class="dropdown-lista"><a href="" class="lista">Categorias </a>
+                <div class="listadesplegable">
+                    <a href="">Hombres</a>
+                    <a href="">Mujeres</a>
+                    <a href="">Niños</a>
+
+                
+                    </div>
+                </li>
+                <li><a href="">Contactanos </a></li>
+                
+            </ul>
+         </nav>
+
+         <section class="contenido">
+             <div class="card">
+                <img src="imagenes/teni.jpg" alt="">
+                <h4> tenis</h4>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi incidunt omnis odio praesentium voluptatibus cumque iure velit quibusdam voluptate, facere hic. Fuga odit quo commodi quam facilis ab, illo eum?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil quae fuga maiores porro ipsa fugit magnam quas. Dolorum tempora corporis veniam, facilis temporibus accusamus, velit magni fuga ullam reprehenderit corrupti.
+                </p>
+                <a href="#">Leer más</a>
+             </div>
+             <div class="card">
+                <img src="imagenes/teni negro.jpg" alt="">
+                <h4> tenis negros</h4>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi incidunt omnis odio praesentium voluptatibus cumque iure velit quibusdam voluptate, facere hic. Fuga odit quo commodi quam facilis ab, illo eum?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil quae fuga maiores porro ipsa fugit magnam quas. Dolorum tempora corporis veniam, facilis temporibus accusamus, velit magni fuga ullam reprehenderit corrupti.
+                </p>
+                <a href="#">Leer más</a>
+             </div>
+             <div class="card">
+                <img src="imagenes/azult.jpg" alt="">
+                <h4> tenis azules</h4>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi incidunt omnis odio praesentium voluptatibus cumque iure velit quibusdam voluptate, facere hic. Fuga odit quo commodi quam facilis ab, illo eum?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil quae fuga maiores porro ipsa fugit magnam quas. Dolorum tempora corporis veniam, facilis temporibus accusamus, velit magni fuga ullam reprehenderit corrupti.
+                </p>
+                <a href="#">Leer más</a>
+             </div>
+         </section>
+</body>
+</html>

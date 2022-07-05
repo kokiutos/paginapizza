@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> <!--Lector de caracteres especiales-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina Inicial</title><!--Este título SOLAMENTE va a aparecer en la pestaña del navegador-->
+</head>
+<body>
+    <!--Los títulos de contenido-->
+    <!--Se hacen con la etiqueta H va desde la h1 hasta la h6, cambia solamente el tamaño, donde la h1 es la mas grande y la h6 es la mas pequeña-->
+    <h1>
+        Ejemplo de título 1 <!--La letra blanca siempre va a ser lo que el usuario ve-->
+    </h1>
+    <h2>Ejemplo de título 2</h2>
+    <h3>Ejemplo de título 3</h3>
+    <h4>Ejemplo de título 4</h4>
+    <h5>Ejemplo de título 5</h5>
+    <h6>Ejemplo de título 6</h6>
+    <!--Cuando necesitamos varias etiquetas IGUALES las puedo sacar de siguiente forma:
+   etiqueta*numero de cantidad de etiquetas que quiero sacar(p*3) y le doy enter-->
+    <!--Parrafos, se hacen con la etiqueta p-->
+    <p><!--Indico que inicia un parrafo-->
+        <!--Si yo escribo dos parrafos en la misma p no me genera un salto de línea-->
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim quo hic aspernatur sit deserunt, minima, doloremque voluptas nemo architecto error iste, earum amet. Fuga, corrupti aspernatur. Quidem mollitia blanditiis recusandae.
+    </p><!--Indico que termina un parrafo-->
+    <hr> <!--Un linea espaciadora que ocupa todo el ancho de la pagina-->
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti quae beatae, quaerat vero tenetur, rerum dolorem sit nihil, animi ab minus pariatur laboriosam unde nulla eum iusto consequuntur eaque. Aperiam.
+        <br> <!--br significa salto de línea-->
+        <!--Etiquetas vacías: sin contenido, son etiquetas que no tienen su etiqueta de cierre, por ende no tiene contenido escrito, por que no delimitan donde comienzan y donde terminan-->
+        <hr>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum voluptates est ullam laudantium, molestias omnis maiores consectetur ut incidunt dignissimos eligendi asperiores facilis, error ab expedita, a magni qui quo?
+    </p>
+    <p>La siguiente etiqueta genera espacios entre lineas:</p>
+    <pre>
+        Texto 1
+        Texto 2
+    </pre>
+    <h3>Lista Ordenada</h3>
+    <!--La etiquta que genera la secuencia de numeros es la ol-->
+    <ol> <!--Los siguientes elementos pertenecen a una lista ordenada: 1.____ 2.____-->
+        <!--Para agregar contenido o los items de la lista se hace con la etiqueta li-->
+        <li>Rojo</li><!--La etiqueta li es la de contenido-->
+        <li>Verde</li>
+        <li>Azul</li>
+        <li>Amarillo</li>
+        <li>Rosado</li>
+<!--Cuando es un etiqueta de contenido de texto, el texto siempre va entre la etiqueta que abre y la etiqueta que cierra-->
+    </ol><!--Indicamos se termina la lista-->
+    <h3>Ejemplo de lista no ordenada</h3>
+    <ul>
+        <li>Rojo</li>
+        <li>Verde</li>
+        <li>Azul</li>
+        <li>Amarillo</li>
+        <li>Rosado</li>
+    </ul>
+    <h3>Ejemplo de lista de definición</h3>
+    <dl><!--Indico que se hará una lista de definición-->
+        <dt>Lápiz:</dt> <!--Dt indica que se va a definir-->
+        <dd><!--dd es la definición-->
+            Es un instrumento de escritura o de dibujo consistente en una mina o barrita de pigmento y <a href="https://es.wikipedia.org/wiki/Encapsulado"> encapsulado</a> generalmente en un cilindro de madera fina, aunque también en envolturas plásticas, de papel y metal.
+        </dd>
+    </dl>
+    <h4>Ejemplo de tabla</h4>
+    <table border="10"><!--Indico que haré una tabla-->
+        <tr><!--Abrí la primera fila-->
+            <!--colspan es el numero en que se va a repartir una fila, el numero indica en cuantas columnas-->
+            <th colspan="3">Estudiantes</th><!--Contenido de la fila, que la letra queda en negrita-->
+        </tr><!--Termine la primera fila-->
+        <tr><!--Abrí la segunda fila-->
+            <th>Nombre</th><!--td es contenido de la tabla-->
+            <th>Apellido</th>
+            <th>Telefono</th>
+        </tr><!--Termine la segunda fila-->
+        <tr><!--Abrí la tercera fila-->
+            <td>Ana</td>
+            <td>Ramirez</td>
+            <td>22222</td>
+        </tr><!--Termine la tercera fila-->
+        <tr><!--Abrí la cuarta fila-->
+            <td>Luis</td>
+            <td>Jaramillo</td>
+            <td>4444</td>
+        </tr><!--Termine la cuarta fila-->
+    </table><!--Indico que termino la tabla-->
+    <br>
+    <!--La etiqueta de imagenes a la img-->
+    <img src="Imagenes/leon.png" alt="" width="20%" height="20%">
+    <!--Primer atributo src significa la ruta de la imagen, indicarle cual imagen vamos a agregar y a esta se le agrega la extencion-->
+    <!--Segundo atributo alt es un nombre opcional que le puedo dar a la imagen, ese nombre SOLAMENTE se va a observar si la imagen se daña, la ruta esta mal, se quita-->
+    <!--Unidades de medida: Los pixceles(px) y los porcentajes(%)-->
+    <!--Ancho:width despues agrego la unidad de medida-->
+    <!--Alto:height despues agrego la unidad de medida-->
+    <!--Etiqueta de video: video(para indicar que voy a agregar un video) y dentro de video source(la ruta del video), estas etiquetas pertenecen a HTML5-->
+    <br>
+    <video width="320px" height="220px" controls>
+       <source src="Videos/y2mate.com - Coldplay  The Scientist Official Video_v720P.mp4" type="video/mp4">
+    </video>
+    <!--Etiquetas de formato:Son etiquetas que vienen con diseños especiales para texto, son: negrita, cursiva, tachada, subindice, superindice-->
+    <!--la etiqueta b o etiqueta strong me permiten establacer un texto en negrita-->
+    <!--la etiqueta em, i me permiten establacer un texto en cursiva-->
+    <!--la etiqueta u,permiten establacer un texto subrayado-->
+    <!--la etiqueta s,permiten establacer un texto tachado-->
+    <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet officia accusamus commodi ut <b>consequatur ducimus</b> , est aperiam placeat  saepe reiciendis sed excepturi iure consectetur, delectus dolores, dolorum modi <u> assumenda maxime.</u>
+    </p>
+    <p>
+        <em>
+        Lorem  ipsum dolor sit amet <s> consectetur adipisicing elit.</s> Beatae odio <mark>temporibus excepturi</mark> , molestiae rerum sint voluptates <small> necessitatibus</small>, ad, molestias impedit ducimus <big> corporis</big> autem! Beatae ut reprehenderit corrupti aut quo dolorum?
+        </em>
+    </p>
+    <p>
+        Texto de  subindice <sub>23</sub><!--Crea un subíndice-->
+    </p>
+    <p>
+        Texto de superíndice <sup>23</sup><!--Crea un superíndice-->
+    </p>
+    <!--Enlaces se hacen con la etiqueta a-->
+    <a href="https://www.youtube.com/" target="_blank">Ir a Youtube</a>
+    <!--href va siempre una URL a la que se va redirigir el usurio-->
+    <!--target="_blank" hace que esa URL se abra en una pestaña nueva-->
+    <!--Queremos que una imagen me lleve a una URL o a otra pagina--> <br>
+    <a href="https://www.cesde.edu.co/">
+        <img src="Imagenes/cesde.png" alt="" width="20%" height="20%">
+    </a>
+    <h2>Formularios</h2>
+    <!--Input es un cuadro por defecto de texto,en el que el usurio puede digitar informacion, pero puede tomar diferentes tipos (fecha, email, contraseña,boton,radio,check)-->
+    <!--Label es un título que se le da al input, es opcional-->
+    <form action="">
+    <label for="">Nombre:</label>
+    <br>
+    <input type="text"> <br>
+    <!--input tipo texto se puede escribir letras,numeros,simbolos-->
+    <label for="">Apellido:</label>
+    <br>
+    <input type="text"> <br>
+    <label for="">Telefono</label><br>
+    <input type="number" placeholder="Escribe tu número celular"> <br>
+    <!--placeholder es un texto guía, que se borra cuando el usurio escribe-->
+    <label for="">Correo electronico</label><br>
+    <input type="email"> <br>
+    <label for="">Fecha de envio de informacion</label> <br>
+    <input type="datetime-local"><br>
+    <label for="">Escribe una contraseña</label><br>
+    <input type="password"> <br>
+    <label for="">Sexo:</label> <br>
+    <input type="radio" name="sexo">Femenino <br>
+    <input type="radio" name="sexo">Masculino <br>
+    <label for="">Seleccione la ciudad</label> <br>
+    <select name="" id="">
+        <option value="Medellín">Medellín</option>
+        <option value="">Bogotá</option>
+        <option value="">Cali</option>
+        <option value="">Cartagena</option>
+        <option value="">Barranquilla</option>
+    </select>
+    <br>
+    <label for="">Selecciona tus lenguajes de Interes:</label><br>
+    <input type="checkbox">HTML <br>
+    <input type="checkbox">CSS <br>
+    <input type="checkbox">JavaScript <br>
+    <input type="checkbox">PHP   
+   <br>
+   <button>Enviar</button><!--Opcion 1-->
+   <br>
+    <input type="submit" value="Enviar"><!--Opcion 2-->
+    </form>
+
+    <audio controls autoplay>
+        
+        <source src="Audio/rammstein-wo-bist-du-sub-espanol-lyrics.mp3" type="audio/mpeg">
+    </audio>
+</body>
+</html>
